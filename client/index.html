@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Chat socket.io</title>
+</head>
+
+<body>
+    <h1>Chat window</h1>
+    <p>Open another tab and try to chat</p> <button id="tab-button" onclick=" window.open('#','_blank')"> New
+        Tab</button>
+
+
+    <div>
+        <ul id="mensajes"></ul>
+        <div id="dummy"></div>
+    </div>
+    <form action="">
+        <input autocomplete="off" type="text">
+        <button id="send-button" type="submit">Enviar</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+
+</html>
